@@ -3,18 +3,20 @@ public class Rectangle {
     private int length;
     private int width;
 
-    public Rectangle(){
+    public Rectangle(int length, int width){
         this.length = length;
         this.width = width;
     }
-
-    int area(){
-        return this.length*this.width;
+    public int calculatedArea(){
+        return this.length * this.width;
     }
 
-    public areaOfRectangle(int length, int width){
-        return this.area;
-
+    public boolean isSquare(){
+        if (length == width){
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
